@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestingMiniBytesSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="TestingMiniBytesTest(failed)">
+    <classes>
+      <class name="com.sw.Tests.HomeTest">
+        <methods>
+          <include name="test2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.sw.Tests.HomeTest -->
+      <class name="com.sw.Tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.sw.Tests.LoginTest -->
+    </classes>
+  </test> <!-- TestingMiniBytesTest(failed) -->
+</suite> <!-- Failed suite [TestingMiniBytesSuite] -->

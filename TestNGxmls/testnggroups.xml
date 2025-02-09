@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CloseBuic Suite ">
+	<listeners>
+		<listener class-name="com.sw.utilities.ExtentListeners" />
+	</listeners>
+	<test thread-count="5" parallel="methods" name="CloseBuic Test">
+	<groups>
+	<run> <include name="smoke"/></run>
+	</groups>
+		<classes>
+		
+			<class name="com.sw.Tests.HomeTest" />
+			<!--  
+			<class name="com.sw.Tests.LoginTest" />
+			<class name="com.sw.Tests.signupTest" />
+			-->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
