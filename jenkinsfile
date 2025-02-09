@@ -16,7 +16,7 @@ echo "Hi deploying project from jenkins"
 
 stage('test'){
 steps{
- bat "mvn test"
+ bat "mvn test -DsuiteFile=Runners/${suite}"
 }
 }
 
